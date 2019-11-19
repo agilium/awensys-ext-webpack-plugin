@@ -52,23 +52,9 @@ This will be included in your webpack configuration if you generate the applicat
 ## Compilation
 
   Compile/build sources in  ``/dist`` folder
-  see package.json
   
-  command
-  ``
-      npm run build
-      or
-      npx babel ./src --out-dir ./dist
-  ``  
-  If the following error occurs launch ``npm install --save-dev @babel/core @babel/cli ``
-   ```
-       You have mistakenly installed the `babel` package, which is a no-op in Babel 6.
-       Babel's CLI commands have been moved from the `babel` package to the `babel-cli` package.
-        npm uninstall babel
-        npm install --save-dev babel-cli
-        See http://babeljs.io/docs/usage/cli/ for setup instructions.
-   ```
-
+  See ``package.json``
+  
   ```
     "main": "dist/index.js",
     "name": "@awensys/awensys-ext-webpack-plugin",
@@ -80,4 +66,20 @@ This will be included in your webpack configuration if you generate the applicat
       "build": "npx babel ./src --out-dir ./dist"
     },
   ```
+  
+  Command
+  ```
+      npm run build
+      or
+      npx babel ./src --out-dir ./dist
+  ``` 
+  
+  If the following error occurs launch `npm install --save-dev @babel/core @babel/cli `
+   ```
+       You have mistakenly installed the `babel` package, which is a no-op in Babel 6.
+       Babel's CLI commands have been moved from the `babel` package to the `babel-cli` package.
+        npm uninstall babel
+        npm install --save-dev babel-cli
+        See http://babeljs.io/docs/usage/cli/ for setup instructions.
+   ```
 
